@@ -16,3 +16,11 @@ for (let i = 0; i < color.length; i++) {
     dot += (color[i] + ',')
 }
 console.log(dot + '.') // value end dot
+
+// ylesanne 4.1
+const colour = ['red', 'green', 'white', 'black']
+let str = colour 
+for (let i = 0; i < colour.length; i++) {
+    str.slice(colour)
+}
+console.log(str.slice) // value with commas
