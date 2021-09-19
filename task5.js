@@ -1,5 +1,6 @@
-const empty = boolean('')
-const hi = boolean('tere')
-const name = boolean('minu nimi on John')
-
-console.log(epty, hi, name)
+const empty = Boolean('')
+const hi = Boolean('tere')
+const name = Boolean('minu nimi on John')
+console.log(empty)
+console.log(hi,)
+console.log(name)
