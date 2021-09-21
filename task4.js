@@ -1,4 +1,4 @@
-const color = ['red', 'green', 'white', 'black']
+const color = ['Red', 'Green', 'White', 'Black']
 let comma = '' 
 for (let i = 0; i < color.length; i++) {
     comma += (color[i] + ',')
@@ -16,11 +16,11 @@ for (let i = 0; i < color.length; i++) {
     dot += (color[i] + ',')
 }
 console.log(dot + '.') // value end dot
+console.log('* 4.0 end *')
 
-// ylesanne 4.1
-const colour = ['red', 'green', 'white', 'black']
-let str = colour 
-for (let i = 0; i < colour.length; i++) {
-    str.slice(colour)
-}
-console.log(str.slice) // value with commas
+const comspace = color.join(', ')
+const com = color.join(',')
+const plusspace = color.join(' + ')
+console.log(com)
+console.log(comspace)
+console.log(plusspace)
