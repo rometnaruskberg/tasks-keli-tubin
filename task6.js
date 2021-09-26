@@ -1,9 +1,6 @@
 const hello = 'Hello! '
 let n = [ , 2, 3, 12]
-let n1 = ''
-
-for (let i = 0; i <= n.length; i++) {
-    n1 += (hello.repeat(n[i]))
-}
-console.log(n1)
-console.log('THE END')
+console.log(hello.repeat(n[0]))
+console.log(hello.repeat(n[1]))
+console.log(hello.repeat(n[2]))
+console.log(hello.repeat(n[3]))
