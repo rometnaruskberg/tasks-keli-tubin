@@ -13,10 +13,9 @@ function bigNum(fiveRandomArray){
 function smallNum(fiveRandomArray){
     return Math.min.apply(null, fiveRandomArray);
 }
-function even()
 
 console.log(randomNumber())   // random number
 console.log('Five random numbers are ' + fiveRandomArray) // five random numbers
 console.log(bigNum(fiveRandomArray)) // biggest number
 console.log(smallNum(fiveRandomArray)) // smallest number
-console.log() // even numbers
+//console.log() // even numbers
