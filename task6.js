@@ -1,8 +1,8 @@
 function greet(n) {
     if (!n) {
         console.log('Hi!')
-    } else {
-        for (let i = 0; i < n; i++) {
+    } else if (n < 10) {
+        for (let i = 0; i < n; i++)
            console.log('Hello!')
         }
     }
