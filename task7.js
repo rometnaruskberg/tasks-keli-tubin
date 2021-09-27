@@ -13,21 +13,14 @@ function bigNum(fiveRandomArray){
 function smallNum(fiveRandomArray){
     return Math.min.apply(null, fiveRandomArray);
 }
-function evenNumber(fiveRandomArray){
-    let even = [];
-    for (var i = 0; i < fiveRandomArray; i++){
-        if (fiveRandomArray[i] % 2 === 0){
-            even.push('true');
-        }else (fiveRandomArray[i] % 2 === 1) 
-            even.push('false');
-            var evenNumbers = 0;
-            for (let i = 0; i < even.length; i++){
-                if (even[i] == 'true'){
-                    return evenNumbers++;
-                    }else{}
-                } 
-                return evenNumbers
+function evenNumber(even){
+    const evenno = [];
+    for (let i = 0; i < even.length; i++){
+        if (even[i] % 2 === 0){
+            evenno.push(true);
+        }
     }
+    return even.length
 }
 
 
