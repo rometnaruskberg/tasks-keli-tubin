@@ -6,6 +6,8 @@ const movies = require('./moviedata.json')
 3. Array of all actors that have made an R rated movie. Do not repeat one actor multiple times!
 4. console.log "Actors that played in those movies: Actors separated by comma"
 */
+
+/*
 function getMoviesR(Rated) {
     return movies.filter((Rate) => {
         return Rate.Rated === Rated
@@ -14,6 +16,7 @@ function getMoviesR(Rated) {
 
 const rMovies = getMoviesR('R')
 console.log('rMovies', rMovies)
+*/
 
 /*console.log('Movies that are rated R are: ' + Title + '.' separated by comma)
 /*console.log('Actors that played in those movies: ' + Actors + '.' separated by comma" */
@@ -35,11 +38,9 @@ console.log('rMovies', rMovies)
 4. console.log "Most rated drama is Title, directed by Director and was released on Released."
 */
 
-function getMovieGenre(Genre) {
-    return movies.filter((Genres) => {
-        return Genres.Genre === Genre
-    })
-}
-
-const genreMovies = getMovieGenre('Drama')
-console.log('genreMovies', genreMovies)
+const genreMovies = movies.filter((movieGenre) => {
+    if (movieGenre.Genre.includes('Drama')) {
+        return movieGenre
+    }
+})
+console.log('Drama', genreMovies)
