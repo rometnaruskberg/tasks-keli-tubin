@@ -53,12 +53,6 @@ mostRatingString += mostRating.Released + '.'
 console.log(mostRatingString)
 
 console.log('Ex 2')
-/* EX 2
-1. Genre = Drama
-2. imdbRating max and imdbVotes max
-3. console.log "Best rated drama is Title, directed by Director and was released on Released."
-4. console.log "Most rated drama is Title, directed by Director and was released on Released."
-*/
 const genreMovies = movies.filter((movieGenre) => {
     if (movieGenre.Genre.includes('Drama')) {
         return movieGenre
@@ -100,16 +94,11 @@ mostRatingString += mostRating.Director
 mostRatingString += ' and was relesed in ' 
 mostRatingString += mostRating.Released + '.'
 
-console.log(mostRatingString) 
+console.log(mostRatingString)
 
-/* EX 3
-1. Rated = R
-2. console.log "Movies that are rated R are: Title separated by comma."
-3. Array of all actors that have made an R rated movie. Do not repeat one actor multiple times!
-4. console.log "Actors that played in those movies: Actors separated by comma"
-*/
+console.log('Ex 3')
 
-/*function getMoviesR(Rated) {
+function getMoviesR(Rated) {
     return movies.filter((Rate) => {
         return Rate.Rated === Rated
     })
@@ -120,35 +109,30 @@ const rMovies = getMoviesR('R')
 const ratedRTitles = rMovies.map(movie => {
     return movie.Title
 })
-console.log('ratedRTitles', ratedRTitles) */
+//console.log('ratedRTitles', ratedRTitles)
 
-/* let rateString = 'Movies that are rated R are: ' 
+let rateString = 'Movies that are rated R are: ' 
 for (let i = 0; i < ratedRTitles.length; i++) {
-    const ending = i === ratedRTitles.length
+    const ending = i + 1 === ratedRTitles.length
     if (ending) {
         rateString += ratedRTitles[i] + '.'
     }else {
-        rateString += ratedRTitles[i] + ','
+        rateString += ratedRTitles[i] + ', '
     }
-    }
-} */
-
-/*console.log('Movies that are rated R are: ' + Title + '.' separated by comma) */
-/*let ratedRString = 'Movies that are rated R are: '
-ratedRString += ratedRTitles.toString() + '.'
-console.log(ratedRString)
+}
+console.log(rateString)
 
 let actors = []
 rMovies.map(movie => {
-    movie.Actors.map(actors) => {
-        actors.push(actors)
+    movie.Actors.map(actor => {
+        actors.push(actor)
     })
 })
+// console.log(actors)
+
 let uniqueActors = [...new Set(actors)];
-console.log('uniqueActors', uniqueActors)
+// console.log('uniqueActors', uniqueActors)
 
-let actorString = 'Actors that played in those movies> '
+let actorString = 'Actors that played in those movies '
 actorString += uniqueActors.join(', ') + '.'
-console.log(actorString   ) */
-
-/*console.log('Actors that played in those movies: ' + Actors + '.' separated by comma" */
+console.log(actorString)
