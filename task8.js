@@ -8,14 +8,6 @@ movies.map(movie => {
 })
 //console.log('movie', movies)
 
-
-
-/* EX 1
-1. Year = 1962 - 1972
-2. imdbRating max and imdbVotes max
-3. console.log "Best rated movie is Title, directed by Director and was released on Released."
-4. console.log "Most rated movie is Title, directed by Director and was released on Released."
-*/
 console.log('Ex 1')
 const movieBetween = movies.filter(movie => {
     if (movie.Year >= 1962 && movie.Year <= 1972) {
@@ -60,35 +52,56 @@ mostRatingString += mostRating.Released + '.'
 
 console.log(mostRatingString)
 
+console.log('Ex 2')
 /* EX 2
 1. Genre = Drama
 2. imdbRating max and imdbVotes max
 3. console.log "Best rated drama is Title, directed by Director and was released on Released."
 4. console.log "Most rated drama is Title, directed by Director and was released on Released."
 */
-/*const genreMovies = movies.filter((movieGenre) => {
+const genreMovies = movies.filter((movieGenre) => {
     if (movieGenre.Genre.includes('Drama')) {
         return movieGenre
     }
 })
-//console.log('Drama', genreMovies)
-function findBestRating(array){ // vaata 41 minutist videos
-    return  array.reduce(previousValue.imdbRating > currentValue.imdbRating) {
+// console.log('Drama', genreMovies)
+
+const bestRating = genreMovies.reduce((previousValue, currentValue) => {
+    if (previousValue.imdbRating > currentValue.imdbRating) {
         return previousValue
-        } else{
-            return currentValue
+     } else{
+         return currentValue
     }
-}
+})
+// console.log('bestRating', bestRating)
 
-cont bestRatingDrama = findBestRating(includes)
+const mostRating = genreMovies.reduce((previousValue, currentValue) => {
+    if (previousValue.imdbVotes > currentValue.imdbVotes) {
+        return previousValue
+     } else{
+         return currentValue
+    }
+})
+// console.log('mostRating', mostRating)
 
-function findMostRated(array) {
-    if 
-}
+let bestRatingString = 'Best rated drama is '
+bestRatingString += bestRating.Title
+bestRatingString += ', directed by '
+bestRatingString += bestRating.Director
+bestRatingString += ' and was relesed in ' 
+bestRatingString += bestRating.Released + '.'
 
-const bestRatingDrama
-const mostRatedDrama
-*/ 
+console.log(bestRatingString)
+
+let mostRatingString = 'Mosted rated drama is '
+mostRatingString += mostRating.Title
+mostRatingString += ', directed by '
+mostRatingString += mostRating.Director
+mostRatingString += ' and was relesed in ' 
+mostRatingString += mostRating.Released + '.'
+
+console.log(mostRatingString) 
+
 /* EX 3
 1. Rated = R
 2. console.log "Movies that are rated R are: Title separated by comma."
