@@ -1,17 +1,17 @@
-const nimi = 'Keli'
-const paev = 22
-const kuu = 12
-const aasta = 1993
-const hobi = ('koerad', 'viipekeel')
-const objekt = {nimi: nimi, sunnipaev: paev + '.' + kuu + '.' + aasta ,  hobi: hobi}; // object
-console.log('Sunnipaev 2.0 vastus on: ' + objekt.sunnipaev) 
-
-
 const name = 'Keli'
-const birthday = new Date(1993, 12, 22)
-const day = birthday.getDate()
-const month = birthday.getMonth()+12
-const year = birthday.getFullYear()-1
+const day = 22
+const month = 12
+const year = 1993
 const hobby = ('koerad', 'viipekeel')
-const object = {name: 'Keli', birthday: day + '.' + month + '.' + year ,  hobby: hobby}; // objekt
-console.log('Sunnipaev 2.1 vastus on: ' + object.birthday)
+const object = {name: name, bday: day + '.' + month + '.' + year ,  hobby: hobby}; // object
+console.log('Birthday 2.0 is: ' + object.bday) 
+
+
+const name2 = 'Keli'
+const birthday = new Date(1993, 11, 22)
+const day2 = birthday.getDate()
+const month2 = birthday.getMonth()+1
+const year2 = birthday.getFullYear()
+const hobby2 = ('koerad', 'viipekeel')
+const object2 = {name2: 'Keli', birthday: day2 + '.' + month2 + '.' + year2 ,  hobby2: hobby2}; // object
+console.log('Birthday 2.1 is: ' + object2.birthday)
